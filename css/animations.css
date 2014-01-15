@@ -1,0 +1,190 @@
+/* 
+ * Animations.css - 1/14/2014
+ * Original animations by Everett Carney for Killer Infographhics
+ *
+ */
+
+/* Employee fade-in */
+@-webkit-keyframes employee_fade {
+	0% 	 { opacity: 0; }
+	100% { opacity: 1; -webkit-animation-timing-function: ease-in; }
+}
+
+@-moz-keyframes employee_fade {
+	0% 	 { opacity: 0; }
+	100% { opacity: 1; -moz-animation-timing-function: ease-in; }
+}
+
+@-o-keyframes employee_fade {
+	0% 	 { opacity: 0; }
+	100% { opacity: 1; -o-animation-timing-function: ease-in; }
+}
+
+@-keyframes employee_fade {
+	0% 	 { opacity: 0; }
+	100% { opacity: 1; animation-timing-function: ease-in; }
+}
+
+.employee-fade {
+	-webkit-animation-duration: .75s;
+	   -moz-animation-duration: .75s;
+	     -o-animation-duration: .75s;
+	        animation-duration: .75s;
+	-webkit-animation-name: employee_fade;
+	   -moz-animation-name: employee_fade;
+	     -o-animation-name: employee_fade;
+	        animation-name: employee_fade;
+	-webkit-animation-fill-mode: both;
+	   -moz-animation-fill-mode: both;
+	     -o-animation-fill-mode: both;
+	        animation-fill-mode: both;
+}
+
+.e1 {
+	-webkit-animation-delay: .5s;
+	   -moz-animation-delay: .5s;
+	     -o-animation-delay: .5s;
+	        animation-delay: .5s;
+}
+
+.e2 {
+	-webkit-animation-delay: 1s;
+	   -moz-animation-delay: 1s;
+	     -o-animation-delay: 1s;
+	        animation-delay: 1s;
+}
+
+.e3 {
+	-webkit-animation-delay: 1.5s;
+	   -moz-animation-delay: 1.5s;
+	     -o-animation-delay: 1.5s;
+	        animation-delay: 1.5s;
+}
+
+.e4 {
+	-webkit-animation-delay: 2s;
+	   -moz-animation-delay: 2s;
+	     -o-animation-delay: 2s;
+	        animation-delay: 2s;
+}
+
+.e5 {
+	-webkit-animation-delay: 2.5s;
+	   -moz-animation-delay: 2.5s;
+	     -o-animation-delay: 2.5s;
+	        animation-delay: 2.5s;
+}
+
+.e6 {
+	-webkit-animation-delay: 3s;
+	   -moz-animation-delay: 3s;
+	     -o-animation-delay: 3s;
+	        animation-delay: 3s;
+}
+
+.e7 {
+	-webkit-animation-delay: 3.5s;
+	   -moz-animation-delay: 3.5s;
+	     -o-animation-delay: 3.5s;
+	        animation-delay: 3.5s;
+}
+
+.e8 {
+	-webkit-animation-delay: 4s;
+	   -moz-animation-delay: 4s;
+	     -o-animation-delay: 4s;
+	        animation-delay: 4s;
+}
+
+.e9 {
+	-webkit-animation-delay: 4.5s;
+	   -moz-animation-delay: 4.5s;
+	     -o-animation-delay: 4.5s;
+	        animation-delay: 4.5s;
+}
+
+/* Fist-bump */
+.fist-bump {
+	-webkit-animation-duration: 2s;
+	   -moz-animation-duration: 2s;
+	     -o-animation-duration: 2s;
+	        animation-duration: 2s;
+	-webkit-animation-fill-mode: both;
+	   -moz-animation-fill-mode: both;
+	     -o-animation-fill-mode: both;
+	        animation-fill-mode: both;
+}
+
+	/* First the transform-origin needs to be moved to 0% 50% */
+	/* Then the fists need to fly at each other and bump */
+	/* Then they need to lift up and rotate a bit */
+	/* Finally they settle back to their origin */
+@-webkit-keyframes left_fist {
+	0% { -webkit-transform-origin: 0% 50%; -webkit-transform: translate(0px, 0px); }
+	33% { -webkit-transform: translate(110%, 0px); -webkit-animation-timing-function: ease-out; }
+	66% { -webkit-transform: rotate(-45deg) translate(200px, 0px); -webkit-animation-timing-function: ease-in; }
+	100% { -webkit-transform: rotate(0deg) translate(0px, 0px); -webkit-animation-timing-function: linear; }
+}
+
+@-moz-keyframes left_fist {
+	0% { -moz-transform-origin: 0% 50%; -moz-transform: translate(0px, 0px); }
+	33% { -moz-transform: translate(110%, 0px); -moz-animation-timing-function: ease-out; }
+	66% { -moz-transform: rotate(-45deg) translate(200px, 0px); -moz-animation-timing-function: ease-in; }
+	100% { -moz-transform: rotate(0deg) translate(0px, 0px); -moz-animation-timing-function: linear; }
+}
+
+@-o-keyframes left_fist {
+	0% { -o-transform-origin: 0% 50%; -o-transform: translate(0px, 0px); }
+	33% { -o-transform: translate(110%, 0px); -o-animation-timing-function: ease-out; }
+	66% { -o-transform: rotate(-45deg) translate(200px, 0px); -o-animation-timing-function: ease-in; }
+	100% { -o-transform: rotate(0deg) translate(0px, 0px); -o-animation-timing-function: linear; }
+}
+
+@-keyframes left_fist {
+	0% { transform-origin: 0% 50%; transform: translate(0px, 0px); }
+	33% { transform: translate(110%, 0px); animation-timing-function: ease-out; }
+	66% { transform: rotate(-45deg) translate(200px, 0px); animation-timing-function: ease-in; }
+	100% { transform: rotate(0deg) translate(0px, 0px); animation-timing-function: linear; }
+}
+
+.left-fist {
+	-webkit-animation-name: left_fist;
+	   -moz-animation-name: left_fist;
+	     -o-animation-name: left_fist;
+	        animation-name: left_fist;
+}
+
+@-webkit-keyframes right_fist {
+	0% { -webkit-transform-origin: 100% 50%; -webkit-transform: translate(0px, 0px); }
+	33% { -webkit-transform:translate(-110%, 0px); -webkit-animation-timing-function: ease-out; }
+	66% { -webkit-transform: rotate(45deg) translate(-200px, 0px); -webkit-animation-timing-function: ease-in; }
+	100% { -webkit-transform: rotate(0deg) translate(0px, 0px); -webkit-animation-timing-function: linear; }
+}
+
+@-moz-keyframes right_fist {
+	0% { -moz-transform-origin: 100% 50%; -moz-transform: translate(0px, 0px); }
+	33% { -moz-transform: translate(-110%, 0px); -moz-animation-timing-function: ease-out; }
+	66% { -moz-transform: rotate(45deg) translate(-200px, 0px); -moz-animation-timing-function: ease-in; }
+	100% { -moz-transform: rotate(0deg) translate(0px, 0px); -moz-animation-timing-function: linear; }
+}
+
+@-o-keyframes right_fist {
+	0% { -o-transform-origin: 100% 50%; -o-transform: translate(0px, 0px); }
+	33% { -o-transform: translate(-110%, 0px); -o-animation-timing-function: ease-out; }
+	66% { -o-transform: rotate(45deg) translate(-200px, 0px); -o-animation-timing-function: ease-in; }
+	100% { -o-transform: rotate(0deg) translate(0px, 0px); -o-animation-timing-function: linear; }
+}
+
+@-keyframes right_fist {
+	0% { transform-origin: 100% 50%; transform: translate(0px, 0px); }
+	33% { transform: translate(-110%, 0px); animation-timing-function: ease-out; }
+	66% { transform: rotate(45deg) translate(-200px, 0px); animation-timing-function: ease-in; }
+	100% { transform: rotate(0deg) translate(0px, 0px); animation-timing-function: linear; }
+}
+
+.right-fist {
+	-webkit-animation-name: right_fist;
+	   -moz-animation-name: right_fist;
+	     -o-animation-name: right_fist;
+	        animation-name: right_fist;
+}

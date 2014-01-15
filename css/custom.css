@@ -1,0 +1,40 @@
+.row {
+	padding-bottom: 10px;
+}
+
+.gigantic {
+	font-size: 108px;
+}
+
+.list-inline-no-padding {
+	padding-left: 2%;
+}
+
+.list-inline-no-padding > li{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.sm-only {
+	display: none;
+}
+
+.lg-only {
+	display: none;
+}
+
+@media (max-width: 980px) {
+	.sm-only {
+		display: inherit;
+	}
+
+	.list-inline-no-padding {
+		padding-left: 12%;
+	}
+}
+
+@media (min-width: 1280px) {
+	.lg-only {
+		display: inherit;
+	}
+}
