@@ -23,6 +23,10 @@
 	display: none;
 }
 
+.stat {
+	display: none;
+}
+
 @media (max-width: 980px) {
 	.sm-only {
 		display: inherit;
