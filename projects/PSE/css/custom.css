@@ -44,5 +44,24 @@ Puget Sound Energy
 	z-index: 10;
 }
 
+.lower {
+	margin-top: 80%;
+}
+
+.modal-info {
+	display: none;
+}
+
 /* Bootstrap Overrides */
-body.modal-open {margin-right: 16px;}
+body.modal-open {
+	margin-right: 16px;
+}
+
+.modal {
+	top: 100px;
+	left: -250px;
+}
+
+.modal-content {
+	width: 700px;
+}
