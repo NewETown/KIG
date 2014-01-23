@@ -1,0 +1,48 @@
+/*
+
+Puget Sound Energy
+
+ - Length 100%
+ - Width 960px
+ - Three clickable items
+ - - Each starts a different slideshow
+ - - Each slide is 700px x 500px
+
+*/
+
+.bounding-box {
+	width: 960px;
+	height: auto;
+	margin-top: 5px;
+}
+
+.slide {
+	position: absolute;
+	width: 700px;
+	height: 500px;
+}
+
+.slide-content {
+	display: none;
+}
+
+.row-highlight {
+	background-color: #d6d6d6;
+}
+
+.row {
+	/* Override */
+	padding-top: 5px;
+}
+
+.focus-image {
+	position: absolute;
+	z-index: -1;
+}
+
+.primary-image {
+	z-index: 10;
+}
+
+/* Bootstrap Overrides */
+body.modal-open {margin-right: 16px;}
