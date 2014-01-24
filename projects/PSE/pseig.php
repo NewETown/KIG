@@ -16,7 +16,7 @@ KIGProjectHeader();
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 		</div>
 		<div class="col-md-2">
-			<img src="http://placehold.it/100&text=tips" class="img-responsive img-circle">
+			<a href="#" data-toggle="modal" data-target="#myModal" onclick="cl3()"><img src="http://placehold.it/100&text=tips" class="img-responsive img-circle"></a>
 		</div>
 	</div>
 	<div class="row">
@@ -114,6 +114,13 @@ KIGProjectHeader();
 			<img src="http://placehold.it/200&text=Modal+three+three" class="img-responsive">
 		</div>
 	</div>
+	<div id="mod3">
+		<span class="title">These are Awesome Tips</span>
+		<div class="slide1">
+			<p>Tips tips tips tips tips tips tips tips tips tips tips tips tips tips tips tips tips tips tips tips tips tips tips tips tips tips tips tips tips tips tips tips tips tips tips tips tips tips tips tips tips tips tips tips tips tips tips tips tips tips tips tips. Also tips.</p>
+			<img src="http://placehold.it/200&text=TIPS!!!" class="img-responsive">
+		</div>
+	</div>
 </div>
 
 
@@ -127,7 +134,7 @@ $(document).ready(function() {
 	    w = $('#box').width();
 
 	$('#tmp').css('top', (h/2) - 150);
-	$('#tmp').css('left', w/2 + 15);
+	$('#tmp').css('left', (w/2) + 15);
 
 	// Add all of the modal content to content
 	var mod_info = $('.modal-info');
@@ -157,27 +164,33 @@ $(document).ready(function() {
 
 });
 
-function cl0() {currCont=0; loadCont();}
-function cl1() {currCont=1; loadCont();}
-function cl2() {currCont=2; loadCont();}
+function cl0() {currCont=0; currItr=0; loadCont();}
+function cl1() {currCont=1; currItr=0; loadCont();}
+function cl2() {currCont=2; currItr=0; loadCont();}
+function cl3() {currCont=3; currItr=0; loadCont();}
 
 function right() {
 	currItr++;
-	if (currItr > 2)
+	if (currItr > (content[currCont]['content'].length - 1))
 		currItr = 0;
-	console.log(currItr);
 	loadCont();
 }
 
 function left() {
 	currItr--;
-	if (currItr < 0)
-		currItr = 2;
-	console.log(currItr);
+	if (currItr < (content[currCont]['content'].length - 1))
+		currItr = content[currCont]['content'].length - 1;
 	loadCont();
 }
 
 function loadCont() {
+	if(content[currCont]['content'].length != 1) {
+		$('#btn-right').css('display', 'inherit');
+		$('#btn-left').css('display', 'inherit');
+	} else {
+		$('#btn-right').css('display', 'none');
+		$('#btn-left').css('display', 'none');
+	}
 	$('#modal_text').children().remove();
 	$('#modal_img').children().remove();
 	$('#modal_text').append(content[currCont]['content'][currItr]);

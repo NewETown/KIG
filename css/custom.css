@@ -27,6 +27,49 @@
 	display: none;
 }
 
+.employee-size {
+	width: 50px;
+	height: 150px;
+}
+
+.product-icon {
+	height: 350px;
+}
+
+.infographic-icon {
+	height: 400px;
+	margin-left: 50px;
+}
+
+.employee-type {
+	width: 400px;
+	height: 400px;
+}
+
+.age-chart {
+
+}
+
+.awards {
+	width: 300px;
+	height: 300px;
+}
+
+.youtube {
+	width: 1200px;
+	height: 600px;
+}
+
+.funnel {
+	width: 1200px;
+	height: 600px;
+}
+
+.charity {
+	width: 1200px;
+	height: 600px;
+}
+
 @media (max-width: 980px) {
 	.sm-only {
 		display: inherit;

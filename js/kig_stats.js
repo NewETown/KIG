@@ -12,7 +12,7 @@ function drawStats() {
 	    larer_rad = rad / 2,
 	    rad_offset = rad / 3,
 	    speed = 250, // Represents the speed of the animations in ms
-	    text_base = "KIG";
+	    text_base = "Some Stats";
 
 	var r = Raphael('kig_stats', div_width, div_height),
 		rad;
@@ -23,7 +23,7 @@ function drawStats() {
 	// });
 
 	// The circle gets an x and y center point
-	r.circle(x_base, y_base, rad * 1.15).attr({ stroke: 'none', fill: '#193340' });
+	// r.circle(x_base, y_base, rad * 1.15).attr({ stroke: 'none', fill: '#193340' });
 
 	var title;
 
@@ -85,7 +85,7 @@ function drawStats() {
 
 	title = r.text(x_base, y_base, text_base).attr({
 		font: '20px Arial',
-		fill: '#fff'
+		fill: '#000'
 	});
 
 }
