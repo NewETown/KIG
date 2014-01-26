@@ -38,6 +38,7 @@ Puget Sound Energy
 .focus-image {
 	position: absolute;
 	z-index: -1;
+	margin-top: -50px;
 }
 
 .primary-image {
@@ -52,16 +53,33 @@ Puget Sound Energy
 	display: none;
 }
 
+.tips-icon {
+	left: -1%;
+}
+
+.img-lift img {
+	margin-top: -45px;
+}
+
+.title-img {
+	margin-top: -2%;
+}
+
 /* Bootstrap Overrides */
 body.modal-open {
 	margin-right: 16px;
 }
 
-.modal {
-	top: 100px;
-	left: -250px;
+.modal-dialog {
+	margin-top: 23%;
+	left: -80px;
 }
 
 .modal-content {
-	width: 700px;
+	/*width: 700px;*/
+	border-radius: 0px;
+}
+
+.modal-body {
+	padding: 0px;
 }
