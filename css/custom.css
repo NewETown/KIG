@@ -70,6 +70,18 @@
 	height: 600px;
 }
 
+.marble-container {
+	height: 500px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.marble-container > img {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+}
+
 @media (max-width: 980px) {
 	.sm-only {
 		display: inherit;

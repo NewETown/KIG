@@ -60,8 +60,6 @@ function drawStats() {
 			arc:[value, 100, rad]}, 1000, '<>'
 		);
 
-		console.log("Doing things and stuff");
-
 		var z = r.path().attr({arc: [0, 100, rad], stroke: color, 'stroke-width': small_rad });
 
 		$(window).scroll(function() {

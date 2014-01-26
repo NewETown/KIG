@@ -115,10 +115,6 @@
 	        animation-fill-mode: both;
 }
 
-	/* First the transform-origin needs to be moved to 0% 50% */
-	/* Then the fists need to fly at each other and bump */
-	/* Then they need to lift up and rotate a bit */
-	/* Finally they settle back to their origin */
 @-webkit-keyframes left_fist {
 	0% { -webkit-transform-origin: 0% 50%; -webkit-transform: translate(0px, 0px); }
 	33% { -webkit-transform: translate(110%, 0px); -webkit-animation-timing-function: ease-out; }
