@@ -11,14 +11,34 @@ Puget Sound Energy
 */
 
 .bounding-box {
-	width: 960px;
-	height: auto;
-	margin-top: 5px;
+	width: 320px;
+}
+
+.cta-text {
+	margin-top: 45px;
+	opacity: 0;
+}
+
+.chat-bubble {
+	margin-left: -45px;
+}
+
+#expander {
+	display: none;
+}
+
+.bump-right {
+	left: 5px;
+}
+
+.hidden {
+	opacity: 0;
 }
 
 .slide {
 	position: absolute;
-	width: 700px;
+	/*width: 700px;*/
+	width: auto;
 	height: 500px;
 }
 
@@ -30,6 +50,10 @@ Puget Sound Energy
 	background-color: #d6d6d6;
 }
 
+.link-bubble {
+	margin-left: 10px;
+}
+
 .row {
 	/* Override */
 	padding-top: 5px;
@@ -38,7 +62,7 @@ Puget Sound Energy
 .focus-image {
 	position: absolute;
 	z-index: -1;
-	margin-top: -50px;
+	margin-top: -40px;
 }
 
 .primary-image {
@@ -53,12 +77,21 @@ Puget Sound Energy
 	display: none;
 }
 
+.modal-buttons {
+	margin-top:-20px;
+	padding-bottom: 5px;
+}
+
 .tips-icon {
-	left: -1%;
+	margin-bottom: 30px;
 }
 
 .img-lift img {
-	margin-top: -45px;
+	margin-top: -50px;
+}
+
+.spacer-row {
+	height: 110px;
 }
 
 .title-img {
@@ -66,20 +99,195 @@ Puget Sound Energy
 }
 
 /* Bootstrap Overrides */
-body.modal-open {
-	margin-right: 16px;
-}
 
 .modal-dialog {
-	margin-top: 23%;
-	left: -80px;
+	margin-top: 15%;
 }
 
 .modal-content {
-	/*width: 700px;*/
 	border-radius: 0px;
 }
 
 .modal-body {
 	padding: 0px;
+}
+
+.lg-only {
+	display: none;
+}
+
+
+@media (max-width: 360px) {
+	.focus-image {
+		margin-left: -10px;
+		width: 320px;
+	}
+
+	.cta-text {
+		font-size: 6px;
+		margin-left: 8px;
+	}
+}
+
+@media (min-width: 768px) {
+	.bounding-box{
+		width: 768px;
+	}
+
+	.chat-bubble {
+		margin-left: -105px;
+	}
+
+	.cta-text {
+		margin-top: 90px;
+	}
+
+	.link-bubble {
+		margin-left: 25px;
+	}
+
+	.spacer-row {
+		height: 230px;
+	}
+
+	.sm-only {
+		display: none;
+	}
+
+	.modal-dialog {
+		margin-top: 10%;
+	}
+}
+
+@media (min-width: 980px) {
+	.bounding-box{
+		width: 960px;
+	}
+
+	.cta-text {
+		margin-top: 105px;
+	}
+
+	.chat-bubble {
+		margin-left: -105px;
+	}
+
+	.img-lift img {
+		margin-top: -45px;
+	}
+
+	.spacer-row {
+		height: 270px;
+	}
+
+	body.modal-open {
+		margin-right: 16px;
+	}
+
+	.modal-dialog {
+		margin-top: 10%;
+		/*left: -80px;*/
+	}
+}
+
+/* Animations */
+.animated {
+	-webkit-animation-fill-mode:both;
+	-moz-animation-fill-mode:both;
+	-o-animation-fill-mode:both;
+	animation-fill-mode:both;
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	-o-animation-duration:1s;
+	animation-duration:1s;
+}
+
+@-webkit-keyframes pulse {
+	0%, 20%, 50%, 80%, 100% {
+		-webkit-transform: scale(1);
+	}
+	40% {
+		-webkit-transform: scale(1.1);
+	}
+	60% {
+		-webkit-transform: scale(1.2);
+	}
+}
+
+@-moz-keyframes pulse {
+	0%, 20%, 50%, 80%, 100% {
+		-moz-transform: scale(1);
+	}
+	40% {
+		-moz-transform: scale(1.1);
+	}
+	60% {
+		-moz-transform: scale(1.2);
+	}
+}
+
+@-o-keyframes pulse {
+	0%, 20%, 50%, 80%, 100% {
+		-o-transform: scale(1);
+	}
+	40% {
+		-o-transform: scale(1.1);
+	}
+	60% {
+		-o-transform: scale(1.2);
+	}
+}
+
+@keyframes pulse {
+	0%, 20%, 50%, 80%, 100% {
+		transform: scale(1);
+	}
+	40% {
+		transform: scale(1.1);
+	}
+	60% {
+		transform: scale(1.2);
+	}
+}
+
+.animated.pulse:hover {
+	-webkit-animation-name: pulse;
+	-moz-animation-name: pulse;
+	-o-animation-name: pulse;
+	animation-name: pulse;
+	-webkit-animation-duration:1.5s;
+	-moz-animation-duration:1.5s;
+	-o-animation-duration:1.5s;
+	animation-duration:1.5s;
+	-webkit-animation-iteration-count:infinite;
+	-moz-animation-iteration-count:infinite;
+	-o-animation-iteration-count:infinite;
+	animation-iteration-count:infinite;
+}
+
+@-webkit-keyframes fade-in {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@-moz-keyframes fade-in {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@-o-keyframes fade-in {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@keyframes fade-in {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+.animated.fade-in {
+	-webkit-animation-name: fade-in;
+	-moz-animation-name: fade-in;
+	-o-animation-name: fade-in;
+	animation-name: fade-in;
 }
