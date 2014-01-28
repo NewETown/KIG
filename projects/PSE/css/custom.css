@@ -27,17 +27,12 @@ Puget Sound Energy
 	display: none;
 }
 
-.bump-right {
-	left: 5px;
-}
-
 .hidden {
 	opacity: 0;
 }
 
 .slide {
 	position: absolute;
-	/*width: 700px;*/
 	width: auto;
 	height: 500px;
 }
@@ -91,7 +86,7 @@ Puget Sound Energy
 }
 
 .spacer-row {
-	height: 110px;
+	height: 90px;
 }
 
 .title-img {
@@ -116,6 +111,8 @@ Puget Sound Energy
 	display: none;
 }
 
+.xs-only {
+}
 
 @media (max-width: 360px) {
 	.focus-image {
@@ -127,9 +124,21 @@ Puget Sound Energy
 		font-size: 6px;
 		margin-left: 8px;
 	}
+
+	.bump-right {
+		margin-left: 10px;
+	}
 }
 
 @media (min-width: 768px) {
+	.lg-only {
+		display: inherit;
+	}
+
+	.xs-only {
+		display: none;
+	}
+
 	.bounding-box{
 		width: 768px;
 	}
@@ -147,7 +156,7 @@ Puget Sound Energy
 	}
 
 	.spacer-row {
-		height: 230px;
+		height: 240px;
 	}
 
 	.sm-only {
@@ -156,6 +165,7 @@ Puget Sound Energy
 
 	.modal-dialog {
 		margin-top: 10%;
+		left: -80px;
 	}
 }
 
@@ -177,7 +187,7 @@ Puget Sound Energy
 	}
 
 	.spacer-row {
-		height: 270px;
+		height: 280px;
 	}
 
 	body.modal-open {
@@ -186,7 +196,6 @@ Puget Sound Energy
 
 	.modal-dialog {
 		margin-top: 10%;
-		/*left: -80px;*/
 	}
 }
 

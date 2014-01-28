@@ -40,55 +40,42 @@ KIGProjectHeader();
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-offset-4 col-xs-3 col-sm-2 col-sm-offset-5 tips-icon">
-				<a href="#" data-toggle="modal" data-target="#myModal" onclick="tips()"><img src="img/icon_tips.svg" class="img-responsive animated pulse"></a>
+			<div class="col-xs-offset-3 col-xs-3 col-sm-2 col-sm-offset-5 tips-icon">
+				<a href="#" data-toggle="modal" data-target="#myModal" onclick="tips()"><img src="img/icon_tips.png" class="img-responsive animated pulse bump-right"></a>
 			</div>
 		</div>
-		<img src="img/cycle.svg" class="img-responsive focus-image">
+		<img src="img/cycle.png" class="img-responsive focus-image">
 		<div class="row img-lift">
-			<div class="col-xs-4 col-xs-offset-1 col-sm-4 col-sm-offset-1 bump-right">
-				<a href="#" data-toggle="modal" data-target="#myModal" onclick="renewable()"><img src="img/icon_renewable.svg" class="img-responsive primary-image animated pulse"></a>
+			<div class="col-xs-4 col-sm-4 col-sm-offset-1">
+				<a href="#" data-toggle="modal" data-target="#myModal" onclick="renewable()"><img src="img/icon_renewable.png" class="img-responsive primary-image animated pulse bump-right"></a>
 			</div>
-			<div class="col-xs-4 col-xs-offset-1 col-sm-4 col-sm-offset-2 bump-right">
-				<a href="#" data-toggle="modal" data-target="#myModal" onclick="wind()"><img src="img/icon_wind.svg" class="img-responsive primary-image animated pulse"></a>
+			<div class="col-xs-4 col-xs-offset-1 col-sm-4 col-sm-offset-2">
+				<a href="#" data-toggle="modal" data-target="#myModal" onclick="wind()"><img src="img/icon_wind.png" class="img-responsive primary-image animated pulse bump-right"></a>
 			</div>
 		</div>
 		<div class="row spacer-row">
-			<div class="col-xs-offset-4 col-xs-3 col-md-offset-5 col-md-2">
-				<p id="spacer-text" class="cta-text animated">Click each icon to see how PSE helps you save!</p>
-			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-4 col-xs-offset-1 col-sm-4 col-sm-offset-1 bump-right">
-				<a href="#" data-toggle="modal" data-target="#myModal" onclick="hydro()"><img src="img/icon_hydroelectric.svg" class="img-responsive primary-image animated pulse"></a>
+			<div class="col-xs-4 col-sm-4 col-sm-offset-1">
+				<a href="#" data-toggle="modal" data-target="#myModal" onclick="hydro()"><img src="img/icon_hydroelectric.png" class="img-responsive primary-image animated pulse bump-right"></a>
 			</div>
-			<div class="col-xs-4 col-xs-offset-1 col-sm-4 col-sm-offset-2 bump-right">
-				<a href="#" data-toggle="modal" data-target="#myModal" onclick="efficiency()"><img src="img/icon_efficiency.svg" class="img-responsive primary-image animated pulse"></a>
+			<div class="col-xs-4 col-xs-offset-1 col-sm-4 col-sm-offset-2">
+				<a href="#" data-toggle="modal" data-target="#myModal" onclick="efficiency()"><img src="img/icon_efficiency.png" class="img-responsive primary-image animated pulse bump-right"></a>
 			</div>
 		</div>
 	</div> <!-- /expander -->
 	<div class="row">
-		<div class="col-xs-8 col-md-12">
-			<img src="img/text_conserve.svg" class="img-responsive">
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-xs-3 col-xs-offset-1 col-sm-3 col-sm-offset-1 col-md-3 col-md-offset-1">
+		<div class="col-xs-3 col-sm-3 col-sm-offset-1 col-md-3 col-md-offset-1">
 			<img src="img/pse-twopeople.svg" class="img-responsive">
 		</div>
 		<div class="col-xs-3 col-sm-3 col-md-3">
-			<img id="event-button" src="img/pse-onyourside.svg" class="img-responsive animated pulse hidden link-bubble">
+			<img id="event-button" src="img/pse-onyourside.png" class="img-responsive animated pulse hidden link-bubble">
 		</div>
 		<div class="col-xs-3 col-sm-3 col-md-3">
 			<img src="img/pse-pointingginger.svg" class="img-responsive">
 		</div>
 		<div class="col-xs-2 col-sm-2 col-md-2">
-			<img id="chat-bubble" src="img/pse-bubble.svg" class="img-responsive animated hidden chat-bubble">
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-xs-2 col-xs-offset-8 col-md-4 col-md-offset-8">
-			<img src="img/text_mypse.svg" class="img-responsive pull-right">
+			<img id="chat-bubble" src="img/pse-bubble.png" class="img-responsive animated hidden chat-bubble">
 		</div>
 	</div>
 </div>
@@ -103,12 +90,23 @@ KIGProjectHeader();
 			</div> -->
 			<div class="modal-body">
 				<div id="modal-content">
-					<div class="row">
+					<div class="row lg-only">
 						<div class="col-xs-1 col-sm-1 col-md-1">
 							<button id="btn-left" class="btn btn-default pull-left" type="button" onclick="left()"><span class="glyphicon glyphicon-chevron-left"></span></button>
 						</div>
-						<div id="modal_svg" data-dismiss="modal" class="col-xs-10 col-sm-10 col-md-10"></div>
+						<div data-dismiss="modal" class="modal_img_container col-xs-10 col-sm-10 col-md-10"></div>
 						<div class="col-xs-1 col-sm-1 col-md-1">
+							<button id="btn-right" class="btn btn-default pull-right" type="button" onclick="right()"><span class="glyphicon glyphicon-chevron-right"></span></button>
+						</div>
+					</div>
+					<div class="row xs-only">
+						<div data-dismiss="modal" class="modal_img_container col-xs-12 col-sm-12 col-md-12"></div>
+					</div>
+					<div class="row xs-only">
+						<div class="col-xs-2">
+							<button id="btn-left" class="btn btn-default pull-left" type="button" onclick="left()"><span class="glyphicon glyphicon-chevron-left"></span></button>
+						</div>
+						<div class="col-xs-2 col-xs-offset-8">
 							<button id="btn-right" class="btn btn-default pull-right" type="button" onclick="right()"><span class="glyphicon glyphicon-chevron-right"></span></button>
 						</div>
 					</div>
@@ -120,24 +118,24 @@ KIGProjectHeader();
 
 <div class="modal-info">
 	<div id="renewable">
-		<img src="img/modal_renewable.svg" class="img-responsive">
+		<img src="img/modal_renewable.png" class="img-responsive">
 	</div>
 	<div id="wind">
-		<img src="img/modal_wind.svg" class="img-responsive">
+		<img src="img/modal_wind.png" class="img-responsive">
 	</div>
 	<div id="hydro">
-		<img src="img/modal_hydro.svg" class="img-responsive">
+		<img src="img/modal_hydroelectric.png" class="img-responsive">
 	</div>
 	<div id="efficiency">
-		<img src="img/modal_efficiency.svg" class="img-responsive">
+		<img src="img/modal_efficiency.png" class="img-responsive">
 	</div>
 	<div id="tips">
-		<img src="img/modal_tip_appliances.svg" class="img-responsive">
-		<img src="img/modal_tip_eeprograms.svg" class="img-responsive">
-		<img src="img/modal_tip_heating.svg" class="img-responsive">
-		<img src="img/modal_tip_lighting.svg" class="img-responsive">
-		<img src="img/modal_tip_waterheating.svg" class="img-responsive">
-		<img src="img/modal_tip_weatherization.svg" class="img-responsive">
+		<img src="img/modal_tip_appliances.png" class="img-responsive">
+		<img src="img/modal_tip_eeprograms.png" class="img-responsive">
+		<img src="img/modal_tip_heating.png" class="img-responsive">
+		<img src="img/modal_tip_lighting.png" class="img-responsive">
+		<img src="img/modal_tip_waterheating.png" class="img-responsive">
+		<img src="img/modal_tip_weatherization.png" class="img-responsive">
 	</div>
 </div>
 

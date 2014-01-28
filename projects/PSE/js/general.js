@@ -26,7 +26,7 @@ $(window).scroll(function() {
 
 	_scroll = $(window).scrollTop();
 
-	if (_scroll > 400 && faded == 0) {
+	if (_scroll > 300 && faded == 0) {
 		console.log('Applied');
 		faded = 1;
 		$('.hidden').addClass("fade-in").removeClass("hidden");
@@ -66,8 +66,8 @@ function loadCont() {
 		$('#btn-right').css('display', 'none');
 		$('#btn-left').css('display', 'none');
 	}
-	$('#modal_svg').children().remove();
-	$('#modal_svg').append(content[currCont][currItr]);
+	$('.modal_img_container').children().remove();
+	$('.modal_img_container').append(content[currCont][currItr]);
 
 	setButtonHeight();
 }
