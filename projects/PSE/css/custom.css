@@ -118,7 +118,7 @@ Puget Sound Energy
 }
 
 .title-img {
-	margin-top: -2%;
+	/*margin-top: -2%;*/
 }
 
 /* Bootstrap Overrides */
@@ -181,15 +181,12 @@ Puget Sound Energy
 @media all and (max-width: 1280px) {
 
 	.focus-image {
-		margin-left: 15px;
-		width: 700px;
-		margin-top: -35px;
 	}
 
 	.ctr {
 	    width: 180px;
-	    margin-top: -32px;
-	    margin-left: 25px;
+		margin-top: -25px;
+		margin-left: -20px;
 	}
 }
 
