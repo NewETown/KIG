@@ -151,122 +151,49 @@ Puget Sound Energy
 .xs-only {
 }
 
-@media screen and (min-width: 320px) {
+@media all and (max-width: 9999px) {
 
-	.bump-right {
-		margin-left: -10px;
-	}
-
-	.ctr {
-		margin-left: 7px;
-		margin-top: -66px;
-		width: 45px;
+	.bounding-box{
+		max-width: 960px;
 	}
 
 	.chat-bubble {
-	    margin-left: -42px;
-	}
-
-	.link-bubble {
-	    margin-left: 10px;
-	}
-}
-
-
-@media screen and (min-width: 360px){
-	.focus-image {
-		margin-left: 40px;
-		width: 165px;
-		margin-top: -32px;
-	}
-
-	.bounding-box{
-		max-width: 360px;
-	}
-
-	.chat-bubble {
-	    margin-left: -45px;
-	}
-
-	.cta-text {
-		font-size: 6px;
-		margin-left: 8px;
-	}
-
-	.ctr {
-		margin-left: 7px;
-		margin-top: -60px;
-		width: 45px;
-	}
-
-	.bump-right {
-		margin-left: 10px;
-	}
-
-	.spacer-row {
-		height: 90px;
-	}
-
-	.link-bubble {
-	    margin-left: 10px;
-	}
-}
-
-@media screen and (min-width: 768px) {
-	.adjust-one {
-		margin-top: 9px;
-	}
-
-	.adjust-two {
-		margin-top:12px;
-	}
-
-	.lg-only {
-		display: inherit;
-	}
-
-	.xs-only {
-		display: none;
-	}
-
-	.bounding-box{
-		max-width: 768px;
-	}
-
-	.cta-text {
-		margin-top: 90px;
-	}
-
-	.ctr {
-	    margin-left: 0px;
-	    margin-top: -55px;
-	    width: 145px;
+		margin-left: -110px;
 	}
 
 	.focus-image {
-		margin-left: 35px;
-		width: 475px;
-		margin-top: -25px;
+		margin-left: 125px;
+		width: 700px;
+		margin-top: -35px;
 	}
 
-	.link-bubble {
-		margin-left: 25px;
+	.ctr {
+	    width: 180px;
+	    margin-top: -32px;
+	    margin-left: -25px;
 	}
 
 	.spacer-row {
-		height: 200px;
-	}
-
-	.sm-only {
-		display: none;
-	}
-
-	.modal-dialog {
-		margin-top: 5%;
+		height: 280px;
 	}
 }
 
-@media screen and (min-width: 980px) {
+@media all and (max-width: 1280px) {
+
+	.focus-image {
+		margin-left: 15px;
+		width: 700px;
+		margin-top: -35px;
+	}
+
+	.ctr {
+	    width: 180px;
+	    margin-top: -32px;
+	    margin-left: 25px;
+	}
+}
+
+@media all and (max-width: 980px) {
 
 	.bounding-box {
 	    max-width: 960px;
@@ -305,41 +232,100 @@ Puget Sound Energy
 	}
 }
 
-@media screen and (min-width: 1280px) {
-
-	.focus-image {
-		margin-left: 125px;
-		width: 700px;
-		margin-top: -35px;
+@media all and (max-width: 768px) {
+	.adjust-one {
+		margin-top: 9px;
 	}
 
-	/*.focus-image { Firefox
-		margin-top: -35px;
-		width: 625px;
-		margin-left: 90px;
-	}*/
-
-	.ctr {
-	    width: 180px;
-	    margin-top: -32px;
-	    margin-left: -25px;
+	.adjust-two {
+		margin-top:12px;
 	}
 
-	/*.ctr { Firefox
-		width: 160px;
-		margin-top: -15px;
-		margin-left: -05px;
-	}*/
-}
+	.bump-right {
+		margin-left: -30px;
+	}
 
-@media screen and (min-width: 1400px) {
+	.lg-only {
+		display: inherit;
+	}
+
+	.xs-only {
+		display: none;
+	}
 
 	.bounding-box{
-		max-width: 960px;
+		max-width: 768px;
+	}
+
+	.cta-text {
+		margin-top: 90px;
+	}
+
+	.ctr {
+	    margin-left: 10px;
+		margin-top: -48px;
+		width: 130px;
+	}
+
+	.focus-image {
+		margin-left: 35px;
+		width: 475px;
+		margin-top: -25px;
+	}
+
+	.link-bubble {
+		margin-left: 25px;
+	}
+
+	.spacer-row {
+		height: 200px;
+	}
+
+	.sm-only {
+		display: none;
+	}
+
+	.modal-dialog {
+		margin-top: 5%;
+	}
+}
+
+@media all and (max-width: 360px){
+	.focus-image {
+		margin-left: 40px;
+		width: 165px;
+		margin-top: -32px;
+	}
+
+	.bounding-box{
+		max-width: 360px;
 	}
 
 	.chat-bubble {
-		margin-left: -110px;
+	    margin-left: -45px;
+	}
+
+	.cta-text {
+		font-size: 6px;
+		margin-left: 8px;
+	}
+
+	.ctr {
+		margin-left: 7px;
+		margin-top: -56px;
+		width: 45px;
+	}
+
+	.bump-right {
+		margin-left: -13px;
+	}
+
+	.spacer-row {
+		height: 90px;
+	}
+
+	.link-bubble {
+	    margin-left: 10px;
 	}
 }
 
