@@ -47,6 +47,11 @@ Puget Sound Energy
 	max-width: 960px;
 }
 
+#people-row.row-clear {
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
 .expander-border {
 	border-color: #333;
 	border-width: 1px;
@@ -74,7 +79,7 @@ Puget Sound Energy
 }
 
 .link-bubble {
-	margin-left: 10px;
+	margin-left: 45px;
 }
 
 .focus-image {
@@ -343,10 +348,10 @@ Puget Sound Energy
 		-webkit-transform: scale(1);
 	}
 	40% {
-		-webkit-transform: scale(1.1);
+		-webkit-transform: scale(.9);
 	}
 	60% {
-		-webkit-transform: scale(1.2);
+		-webkit-transform: scale(.95);
 	}
 }
 
@@ -355,10 +360,10 @@ Puget Sound Energy
 		-moz-transform: scale(1);
 	}
 	40% {
-		-moz-transform: scale(1.1);
+		-moz-transform: scale(.9);
 	}
 	60% {
-		-moz-transform: scale(1.2);
+		-moz-transform: scale(.95);
 	}
 }
 
@@ -367,10 +372,10 @@ Puget Sound Energy
 		-o-transform: scale(1);
 	}
 	40% {
-		-o-transform: scale(1.1);
+		-o-transform: scale(.9);
 	}
 	60% {
-		-o-transform: scale(1.2);
+		-o-transform: scale(.95);
 	}
 }
 
@@ -379,10 +384,10 @@ Puget Sound Energy
 		transform: scale(1);
 	}
 	40% {
-		transform: scale(1.1);
+		transform: scale(.9);
 	}
 	60% {
-		transform: scale(1.2);
+		transform: scale(.95);
 	}
 }
 
