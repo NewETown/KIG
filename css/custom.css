@@ -90,6 +90,14 @@
 	display: none;
 }
 
+.visible {
+	display: inherit;
+}
+
+.hidden {
+	display: none;
+}
+
 @media (max-width: 1280px) {
 	
 }
