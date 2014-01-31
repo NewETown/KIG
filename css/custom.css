@@ -20,7 +20,7 @@
 }
 
 .lg-only {
-	display: none;
+	display: inherit;
 }
 
 .stat {
@@ -82,18 +82,24 @@
 	position: absolute;
 }
 
+.hand {
+	z-index: 10;
+}
+
+@media (max-width: 1280px) {
+	
+}
+
 @media (max-width: 980px) {
+	.lg-only {
+		display: none;
+	}
+
 	.sm-only {
 		display: inherit;
 	}
 
 	.list-inline-no-padding {
 		padding-left: 12%;
-	}
-}
-
-@media (min-width: 1280px) {
-	.lg-only {
-		display: inherit;
 	}
 }
