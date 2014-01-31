@@ -22,6 +22,11 @@ Puget Sound Energy
 	max-width: 320px;
 }
 
+.bottom-row {
+	height:320px;
+	background-size:100% auto;
+}
+
 .chat-bubble {
 	margin-left: -45px;
 }
@@ -35,9 +40,6 @@ Puget Sound Energy
 	margin-left: 7px;
 	margin-top: -63px;
 	width: 40px;
-	/*margin-left: 7px;
-	margin-top: -66px;
-	width: 45px;*/
 }
 
 #expander {
@@ -54,9 +56,6 @@ Puget Sound Energy
 }
 
 .expander-border {
-	/*border-color: #333;
-	border-width: 1px;
-	border-style: solid;*/
 	background-color: #9bd9d9;
 	padding-bottom: 0px;
 }
@@ -85,9 +84,6 @@ Puget Sound Energy
 
 .focus-image {
 	position: absolute;
-	/*margin-top: -40px;
-	margin-left: 70px;
-	width: 405px;*/
 	margin-left: 25px;
 	width: 165px;
 	margin-top: -42px;
@@ -118,13 +114,8 @@ Puget Sound Energy
 	margin-top: -50px;
 }
 
-
 .spacer-row {
 	height: 90px;
-}
-
-.title-img {
-	/*margin-top: -2%;*/
 }
 
 /* Bootstrap Overrides */
@@ -157,6 +148,8 @@ Puget Sound Energy
 .row-no-padding {
 	padding-top: 0px;
 }
+
+/* End Bootstrap overrides */
 
 @media all and (max-width: 9999px) {
 
