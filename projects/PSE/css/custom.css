@@ -10,11 +10,12 @@ Puget Sound Energy
 
 */
 
-.adjust-one {
-	margin-top:-3px;
+.adjust-title {
+	margin-bottom: 5px;
 }
 
-.adjust-two {
+.bot-row-padding {
+	padding-bottom: 10px;
 }
 
 .bounding-box{
