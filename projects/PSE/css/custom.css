@@ -189,7 +189,7 @@ Puget Sound Energy
 @media all and (max-width: 1280px) {
 
 	.focus-image {
-		margin-left: 5px;
+		/*margin-left: 5px;*/
 		width: 700px;
 		margin-top: -30px;
 	}
