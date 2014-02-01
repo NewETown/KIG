@@ -7,12 +7,12 @@ $(document).ready(function() {
 	    _w = marble_container.width(),
 	    _w_min = _w / 5,
 	    _h = marble_container.height();
-	    console.log("Dist from top: " + parseInt(marble_container.offset().top));
+	    // console.log("Dist from top: " + parseInt(marble_container.offset().top));
 
 	marble_container.children().each(function() {
 		var _dist = parseInt(marble_container.offset().top),
 			_x = Math.floor(Math.random() * (_w - _w_min) ),
-		    _y = _dist + _h + Math.floor((Math.random() * _h/2)),
+		    _y = Math.max(_dist + (_h * .6) + Math.floor((Math.random() * _h/3)), 5375),
 		    _m = Math.floor(Math.random() * 2),
 		    _img = $(this);
 
@@ -40,36 +40,36 @@ $(window).scroll(function() {
 		$('#right-fist').addClass("right-fist fist-bump");
 	}
 
-	if(_scroll > 4900 && _scroll < 5400) {
+	if(_scroll > 5200 && _scroll < 5800) {
 
 		console.log(_scroll);
 
 		marble0.each(function() {
 			var _t = $(this),
-			    _h = parseInt(_t.css('top'));//.replace(/[^-\d\.]/g, ''));
+			    _h = parseInt(_t.css('top'));
 
 			_t.css({'top': function() {
-	    		return _h + (20 * scrollDir); // Math.max(Math.min(_h + (20 * scrollDir), 530), 30);
+	    		return Math.max(5300, _h + (50 * scrollDir));
 		  		}
 			});
 		});
 
 		marble1.each(function() {
 			var _t = $(this),
-			    _h = parseInt(_t.css('top'));//.replace(/[^-\d\.]/g, ''));
+			    _h = parseInt(_t.css('top'));
 
 			_t.css({'top': function() {
-	    		return _h + (40 * scrollDir); // Math.max(Math.min(_h + (40 * scrollDir), 530), 30);
+	    		return Math.max(5300, _h + (75 * scrollDir));
 		  		}
 			});
 		});
 
 		marble2.each(function() {
 			var _t = $(this),
-				_h = parseInt(_t.css('top'));//.replace(/[^-\d\.]/g, ''));
+				_h = parseInt(_t.css('top'));
 
 			_t.css({'top': function() {
-	    		return _h + (60 * scrollDir); // Math.max(Math.min(_h + (60 * scrollDir), 530), 30);
+	    		return Math.max(5300, _h + (100 * scrollDir));
 		  		}
 			});
 		});
