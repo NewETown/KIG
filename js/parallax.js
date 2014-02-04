@@ -1,18 +1,21 @@
 var marbles = $('.marble-container').children();
-var marble0, marble1, marble2, scrollDir = 1, prevScroll = 0;
+var marble0, marble1, marble2, scrollDir = 1, prevScroll = 0, fistBumpOffset = $('#fist-bump-row').offset().top + 175;
 
 $(document).ready(function() {
+	setTimeout(setMarbles, 500);	
+});
 
+function setMarbles() {
 	var marble_container = $('.marble-container'),
 	    _w = marble_container.width(),
 	    _w_min = _w / 5,
 	    _h = marble_container.height();
-	    // console.log("Dist from top: " + parseInt(marble_container.offset().top));
+	    console.log("Dist from top: " + marble_container.offset().top);
 
 	marble_container.children().each(function() {
-		var _dist = parseInt(marble_container.offset().top),
+		var _dist = marble_container.offset().top,
 			_x = Math.floor(Math.random() * (_w - _w_min) ),
-		    _y = Math.max(_dist + (_h * .6) + Math.floor((Math.random() * _h/3)), 5375),
+		    _y = Math.random() * (_h/3) + _dist, //Math.max(_dist + (_h * .6) + Math.floor((Math.random() * _h/3)), 5375),
 		    _m = Math.floor(Math.random() * 2),
 		    _img = $(this);
 
@@ -24,7 +27,7 @@ $(document).ready(function() {
 	marble0 = $('.marble0');
 	marble1 = $('.marble1');
 	marble2 = $('.marble2');
-});
+}
 
 $(window).scroll(function() {
 
@@ -35,7 +38,7 @@ $(window).scroll(function() {
 	else
 		scrollDir = -1;
 
-	if(_scroll > 2900)  {
+	if(_scroll > fistBumpOffset)  {
 		$('#left-fist').addClass("left-fist fist-bump");
 		$('#right-fist').addClass("right-fist fist-bump");
 	}
