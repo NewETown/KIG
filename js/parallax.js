@@ -35,7 +35,7 @@ $(window).scroll(function() {
 	else
 		scrollDir = -1;
 
-	if(_scroll > 2400)  {
+	if(_scroll > 2900)  {
 		$('#left-fist').addClass("left-fist fist-bump");
 		$('#right-fist').addClass("right-fist fist-bump");
 	}
