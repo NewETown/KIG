@@ -1,21 +1,21 @@
 var marbles = $('.marble-container').children();
-var marble0, marble1, marble2, scrollDir = 1, prevScroll = 0, fistBumpOffset = $('#fist-bump-row').offset().top + 175;
+var marble0, marble1, marble2, scrollDir = 1, prevScroll = 0, fistBumpOffset = $('#fist-bump-row').offset().top + 175, marble_offset;
 
 $(document).ready(function() {
-	setTimeout(setMarbles, 500);	
+	setTimeout(setMarbles, 200);	
 });
 
 function setMarbles() {
 	var marble_container = $('.marble-container'),
-	    _w = marble_container.width(),
+		_w = marble_container.width(),
 	    _w_min = _w / 5,
 	    _h = marble_container.height();
-	    console.log("Dist from top: " + marble_container.offset().top);
+
+    marble_offset = marble_container.offset().top;
 
 	marble_container.children().each(function() {
-		var _dist = marble_container.offset().top,
-			_x = Math.floor(Math.random() * (_w - _w_min) ),
-		    _y = Math.random() * (_h/3) + _dist, //Math.max(_dist + (_h * .6) + Math.floor((Math.random() * _h/3)), 5375),
+		var _x = Math.floor(Math.random() * (_w - _w_min) ),
+		    _y = Math.random() * (_h/3) + marble_offset, //Math.max(_dist + (_h * .6) + Math.floor((Math.random() * _h/3)), 5375),
 		    _m = Math.floor(Math.random() * 2),
 		    _img = $(this);
 
@@ -43,7 +43,7 @@ $(window).scroll(function() {
 		$('#right-fist').addClass("right-fist fist-bump");
 	}
 
-	if(_scroll > 5200 && _scroll < 5800) {
+	if(_scroll > (marble_offset - 50) && _scroll < (marble_offset + 500)) {
 
 		console.log(_scroll);
 
@@ -52,7 +52,7 @@ $(window).scroll(function() {
 			    _h = parseInt(_t.css('top'));
 
 			_t.css({'top': function() {
-	    		return Math.max(5300, _h + (50 * scrollDir));
+	    		return _h + (50 * scrollDir);
 		  		}
 			});
 		});
@@ -62,7 +62,7 @@ $(window).scroll(function() {
 			    _h = parseInt(_t.css('top'));
 
 			_t.css({'top': function() {
-	    		return Math.max(5300, _h + (75 * scrollDir));
+	    		return _h + (75 * scrollDir);
 		  		}
 			});
 		});
@@ -72,7 +72,7 @@ $(window).scroll(function() {
 				_h = parseInt(_t.css('top'));
 
 			_t.css({'top': function() {
-	    		return Math.max(5300, _h + (100 * scrollDir));
+	    		return _h + (100 * scrollDir);
 		  		}
 			});
 		});

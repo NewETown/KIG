@@ -19,7 +19,7 @@ Puget Sound Energy
 }
 
 .spacer-top {
-	height: 105px;
+	height: 65px;
 }
 
 .bounding-box{
@@ -37,8 +37,8 @@ Puget Sound Energy
 
 .ctr {
 	width: 180px;
-	margin-top: -25px;
-	margin-left: -33px;
+	margin-top: -15px;
+	margin-left: -29px;
 }
 
 #expander {
@@ -118,22 +118,28 @@ Puget Sound Energy
 	height: 280px;
 }
 
+.img-center-bot, .img-center-top, .img-center-left, .img-center-right {
+	width: 81px;
+}
+
 .img-center-bot {
-	margin-top:45px
+	margin-top: 80px;
+	margin-left: 20px;
 }
 
 .img-center-top {
-	margin-top:-105px;
+	margin-top: -58px;
+	margin-left: 19px;
 }
 
 .img-center-left {
-	margin-top: 50px;
-	margin-left: -50px;
+	margin-top: 85px;
+	margin-left: -5px;
 }
 
 .img-center-right {
-	margin-top: 50px;
-	margin-left: 35px;
+	margin-top: 85px;
+	margin-left: 45px;
 }
 
 /* Bootstrap Overrides */
@@ -189,7 +195,8 @@ Puget Sound Energy
 	}
 
 	.ctr {
-		margin-left: 25px;
+		margin-left: 22px;
+		margin-top: -5px;
 	}
 
 	.chat-bubble {
@@ -213,19 +220,22 @@ Puget Sound Energy
 	}
 
 	.img-center-bot {
-		margin-top: 80px;
+		margin-top: 85px;
+		margin-left: 5px;
 	}
 
 	.img-center-top {
-		margin-top: -95px;
+		margin-top: -55px;
+		margin-left: 4px;
 	}
 
 	.img-center-left {
-		margin-left: -40px;
+		margin-left: -20px;
+		margin-top: 87px;
 	}
 
 	.img-center-right {
-		margin-right: 90px;
+		margin-left: 85px;
 	}
 
 	body.modal-open {
@@ -243,7 +253,7 @@ Puget Sound Energy
 	}
 
 	.spacer-top	{
-		height: 135px;
+		height: 110px;
 	}
 
 	.bump-right {
@@ -267,8 +277,8 @@ Puget Sound Energy
 	}
 
 	.ctr {
-		margin-left: 55px;
-		margin-top: -10px;
+		margin-left: 51px;
+		margin-top: -16px;
 		width: 130px;
 	}
 
@@ -279,23 +289,27 @@ Puget Sound Energy
 	}
 
 	.img-center-bot {
-		margin-top: 15px;
-		margin-left: 10px;
+		margin-top: 55px;
+		margin-left: 12px;
 	}
 
 	.img-center-top {
-		margin-top: -135px;
-		margin-left: 10px;
+		margin-top: -110px;
+		margin-left: 12px;
 	}
 
 	.img-center-left {
 		margin-top: 60px;
-		margin-left: -20px;
+		margin-left: 0px;
 	}
 
 	.img-center-right {
 		margin-top: 60px;
-		margin-left: 90px;
+		margin-left: 80px;
+	}
+
+	.img-lift {
+		margin-top: -84px;
 	}
 
 	.link-bubble {
@@ -304,7 +318,7 @@ Puget Sound Energy
 	}
 
 	.spacer-row {
-		height: 310px;
+		height: 270px;
 	}
 
 	.sm-only {

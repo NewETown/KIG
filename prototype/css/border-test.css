@@ -1,0 +1,18 @@
+body {
+	max-width: 1000px;
+}
+
+.full {
+	width: 100%;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	border-left-color: red;
+	display: block;
+}
+
+.left {
+	width: 25%;
+	border-left: 1px solid blue;
+	border-bottom: 1px solid blue;
+	display: block;
+}
