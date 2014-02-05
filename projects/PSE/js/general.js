@@ -49,6 +49,10 @@ function wind() {currCont=1; currItr=0; loadCont();}
 function hydro() {currCont=2; currItr=0; loadCont();}
 function efficiency() {currCont=3; currItr=0; loadCont();}
 function tips() {currCont=4; currItr=0; loadCont();}
+function tips_heating() {currCont=5; currItr=0; loadCont();}
+function tips_lighting() {currCont=6; currItr=0; loadCont();}
+function tips_appliances() {currCont=7; currItr=0; loadCont();}
+function tips_waterheating() {currCont=8; currItr=0; loadCont();}
 
 function right() {
 	currItr++;

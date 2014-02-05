@@ -145,7 +145,7 @@ Puget Sound Energy
 /* Bootstrap Overrides */
 
 .modal-dialog {
-	margin-top: 15%;
+	margin-top: 5%;
 }
 
 .modal-body {
@@ -323,10 +323,6 @@ Puget Sound Energy
 
 	.sm-only {
 		display: none;
-	}
-
-	.modal-dialog {
-		margin-top: 5%;
 	}
 }
 
