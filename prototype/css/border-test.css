@@ -16,3 +16,19 @@ body {
 	border-bottom: 1px solid blue;
 	display: block;
 }
+
+.animated {
+	-webkit-animation-duration: .75s;
+	   -moz-animation-duration: .75s;
+	     -o-animation-duration: .75s;
+	        animation-duration: .75s;/*
+	-webkit-animation-name: employee_fade;
+	   -moz-animation-name: employee_fade;
+	     -o-animation-name: employee_fade;
+	        animation-name: employee_fade;*/
+	-webkit-animation-fill-mode: both;
+	   -moz-animation-fill-mode: both;
+	     -o-animation-fill-mode: both;
+	        animation-fill-mode: both;
+}
+

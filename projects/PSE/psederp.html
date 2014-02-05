@@ -244,125 +244,140 @@
 
 <!-- IG -->
 
-<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="css/custom.css">
-<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 
-<div class="container">
-
-		<!-- Body stuff -->
-		<div id="box" class="bounding-box">
-			<div id="expander" class="expander-border">
-				<div class="row adjust-one">
-					<div class="col-xs-8 col-xs-offset-1 col-md-11 col-md-offset-1">
-						<img src="img/text-main.png" class="img-responsive title-img">
-					</div>
+	<!-- Body stuff -->
+	<div id="box" class="bounding-box">
+		<div id="expander" class="expander-border">
+			<div class="row adjust-one row-no-padding">
+				<div class="col-xs-12 col-md-12">
+					<img src="img/title.png" class="img-responsive adjust-title">
 				</div>
-				<div class="row adjust-two">
-					<div class="col-xs-8 col-xs-offset-1 col-md-11 col-md-offset-1">
-						<img src="img/text-save.png" class="img-responsive title-img">
-					</div>
+			</div>
+			<div class="row spacer-top"></div> <!-- Spacer row -->
+			<img src="img/cycle.png" class="img-responsive focus-image">
+			<div class="row">
+				<div class="col-xs-4 col-xs-offset-2 col-sm-4 col-sm-offset-1 col-md-3 col-md-offset-2">
+					<a href="#" data-toggle="modal" data-target="#myModal" onclick="renewable()"><img src="img/icon_renewable.png" class="img-responsive primary-image animated long-pulse long-pulse-0 bump-right img-lift"></a>
 				</div>
-				<div class="row" style="height:45px;">
-					
+				<div class="col-xs-2 col-md-2">
+					<a href="#" data-toggle="modal" data-target="#myModal" onclick="tips_heating()"><img src="img/heating.png" class="img-responsive img-circle animated pulse img-center-top"></a>
 				</div>
-				<img src="img/cycle.png" class="img-responsive focus-image">
-				<div class="row img-lift">
-					<div class="col-xs-4 col-xs-offset-2 col-sm-4 col-sm-offset-1 col-md-3 col-md-offset-2">
-						<a href="#" data-toggle="modal" data-target="#myModal" onclick="renewable()"><img src="img/icon_renewable.png" class="img-responsive primary-image animated long-pulse long-pulse-0 bump-right"></a>
-					</div>
-					<div class="col-xs-4 col-xs-offset-1 col-sm-4 col-sm-offset-2 col-md-3 col-md-offset-2">
-						<a href="#" data-toggle="modal" data-target="#myModal" onclick="wind()"><img src="img/icon_wind.png" class="img-responsive primary-image animated long-pulse long-pulse-1 bump-right"></a>
-					</div>
+				<div class="col-xs-4 col-sm-4 col-md-3">
+					<a href="#" data-toggle="modal" data-target="#myModal" onclick="wind()"><img src="img/icon_wind.png" class="img-responsive primary-image animated long-pulse long-pulse-1 bump-right img-lift"></a>
 				</div>
-				<div class="row spacer-row">
-					<div class="col-xs-offset-4 col-xs-4 col-sm-4 col-sm-offset-4 col-md-3 col-md-offset-5 tips-icon">
-						<a href="#" data-toggle="modal" data-target="#myModal" onclick="tips()"><img src="img/icon_tips.png" class="img-responsive animated pulse ctr"></a>
-					</div>
+			</div>
+			<div class="row spacer-row">
+				<div class="col-xs-2 col-xs-offset-2 col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-2">
+					<a href="#" data-toggle="modal" data-target="#myModal" onclick="tips_waterheating()"><img src="img/water_heating.png" class="img-responsive img-circle img-center-left animated pulse"></a>
 				</div>
-				<div class="row img-lift">
-					<div class="col-xs-4 col-xs-offset-2 col-sm-4 col-sm-offset-1 col-md-3 col-md-offset-2"> <!-- "col-xs-4 col-xs-offset-2 col-sm-4 col-sm-offset-1 col-md-3 col-md-offset-2"> -->
-						<a href="#" data-toggle="modal" data-target="#myModal" onclick="hydro()"><img src="img/icon_hydroelectric.png" class="img-responsive primary-image animated long-pulse long-pulse-3 bump-right"></a>
-					</div>
-					<div class="col-xs-4 col-xs-offset-1 col-sm-4 col-sm-offset-2 col-md-3 col-md-offset-2"> <!-- "col-xs-4 col-sm-4 col-sm-offset-2 col-md-3 col-md-offset-2"> -->
-						<a href="#" data-toggle="modal" data-target="#myModal" onclick="efficiency()"><img src="img/icon_efficiency.png" class="img-responsive primary-image animated long-pulse long-pulse-2 bump-right"></a>
-					</div>
+				<div class="col-xs-4 col-xs-offset-1 col-sm-4 col-md-3 tips-icon">
+					<a href="#" data-toggle="modal" data-target="#myModal" onclick="tips()"><img src="img/icon_tips.png" class="img-responsive animated pulse ctr"></a>
 				</div>
-			</div> <!-- /expander -->
-			<div id="people-row" class="row">
-				<div class="col-xs-3 col-xs-offset-1 col-sm-3 col-md-3 col-md-offset-1">
-					<img src="img/pse-twopeople.svg" class="img-responsive">
+				<div class="col-xs-2 col-md-2">
+					<a href="#" data-toggle="modal" data-target="#myModal" onclick="tips_appliances()"><img src="img/appliances.png" class="img-responsive img-circle img-center-right animated pulse"></a>
 				</div>
-				<div class="col-xs-3 col-sm-3 col-md-3">
-					<img id="event-button" src="img/pse-onyourside.png" class="img-responsive animated fade-in pulse link-bubble">
+			</div>
+			<div class="row bot-row-padding">
+				<div class="col-xs-4 col-xs-offset-2 col-sm-4 col-sm-offset-1 col-md-3 col-md-offset-2">
+					<a href="#" data-toggle="modal" data-target="#myModal" onclick="hydro()"><img src="img/icon_hydroelectric.png" class="img-responsive primary-image animated long-pulse long-pulse-3 bump-right img-lift"></a>
 				</div>
-				<div class="col-xs-3 col-sm-3 col-md-3">
-					<img src="img/pse-pointingginger.svg" class="img-responsive">
+				<div class="col-xs-2 col-md-2">
+					<a href="#" data-toggle="modal" data-target="#myModal" onclick="tips_lighting()"><img src="img/lighting.png" class="img-responsive img-circle animated pulse img-center-bot"></a>
 				</div>
-				<div class="col-xs-2 col-sm-2 col-md-2">
-					<img id="chat-bubble" src="img/pse-bubble.png" class="img-responsive animated fade-in chat-bubble">
+				<div class="col-xs-4 col-sm-4 col-md-3">
+					<a href="#" data-toggle="modal" data-target="#myModal" onclick="efficiency()"><img src="img/icon_efficiency.png" class="img-responsive primary-image animated long-pulse long-pulse-2 bump-right img-lift"></a>
 				</div>
 			</div>
 		</div>
+		<!-- <div id="people-row" class="row row-clear" style="background-image:url('img/people-background.png');background-repeat:no-repeat;background-size:100% auto; height:365px;">
+			<div class="col-xs-3 col-xs-offset-1 col-sm-3 col-md-3 col-md-offset-1">
+			</div>
+			<div class="col-xs-3 col-sm-3 col-md-3">
+				<img id="event-button" src="img/pse-onyourside.png" class="img-responsive animated fade-in pulse link-bubble">
+			</div>
+			<div class="col-xs-3 col-sm-3 col-md-3">
+			</div>
+			<div class="col-xs-2 col-sm-2 col-md-2">
+			</div>
+		</div> -->
+		<!-- <div class="row">
+			<div class="col-xs-4">
+				<img id="event-button" src="http://placehold.it/250&text=Event" class="img-responsive">
+			</div>
+			<div class="col-xs-8">
+				<img src="http://placehold.it/600x250" class="img-responsive">
+			</div>
+		</div> -->
 
 
-		<!-- Modal -->
-		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					</div>
-					<div class="modal-body">
-						<div id="modal-content">
-							<div class="row">
-								<div class="modal_img_container col-xs-12 col-sm-12 col-md-12"></div>
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				</div>
+				<div class="modal-body">
+					<div id="modal-content">
+						<div class="row">
+							<div class="modal_img_container col-xs-12 col-sm-12 col-md-12"></div>
+						</div>
+						<div class="row">
+							<div class="col-xs-2">
+								<button id="btn-left" class="btn btn-default pull-left" type="button" onclick="left()"><span class="glyphicon glyphicon-chevron-left"></span></button>
 							</div>
-							<div class="row">
-								<div class="col-xs-2">
-									<button id="btn-left" class="btn btn-default pull-left" type="button" onclick="left()"><span class="glyphicon glyphicon-chevron-left"></span></button>
-								</div>
-								<div class="col-xs-2 col-xs-offset-8">
-									<button id="btn-right" class="btn btn-default pull-right" type="button" onclick="right()"><span class="glyphicon glyphicon-chevron-right"></span></button>
-								</div>
+							<div class="col-xs-2 col-xs-offset-8">
+								<button id="btn-right" class="btn btn-default pull-right" type="button" onclick="right()"><span class="glyphicon glyphicon-chevron-right"></span></button>
 							</div>
 						</div>
 					</div>
-				</div><!-- /.modal-content -->
-			</div><!-- /.modal-dialog -->
-		</div><!-- /.modal -->
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
 
-		<div class="modal-info">
-			<div id="renewable">
-				<img src="img/modal_renewable.png" class="img-responsive">
-			</div>
-			<div id="wind">
-				<img src="img/modal_wind.png" class="img-responsive">
-			</div>
-			<div id="hydro">
-				<img src="img/modal_hydroelectric.png" class="img-responsive">
-			</div>
-			<div id="efficiency">
-				<img src="img/modal_efficiency.png" class="img-responsive">
-			</div>
-			<div id="tips">
-				<img src="img/modal_tip_appliances.png" class="img-responsive">
-				<img src="img/modal_tip_heating.png" class="img-responsive">
-				<img src="img/modal_tip_lighting.png" class="img-responsive">
-				<img src="img/modal_tip_waterheating.png" class="img-responsive">
-				<img src="img/modal_tip_weatherization.png" class="img-responsive">
-                <img src="img/modal_tip_eeprograms.png" class="img-responsive">
-			</div>
+	<div class="modal-info">
+		<div id="renewable">
+			<img src="img/modal_renewable.png" class="img-responsive">
 		</div>
+		<div id="wind">
+			<img src="img/modal_wind.png" class="img-responsive">
+		</div>
+		<div id="hydro">
+			<img src="img/modal_hydroelectric.png" class="img-responsive">
+		</div>
+		<div id="efficiency">
+			<img src="img/modal_efficiency.png" class="img-responsive">
+		</div>
+		<div id="tips">
+            <img src="img/modal_tip_eeprograms.png" class="img-responsive">
+			<img src="img/modal_tip_weatherization.png" class="img-responsive">
+		</div>
+		<div id="tip_heating">
+			<img src="img/modal_tip_heating.png" class="img-responsive">
+		</div>
+		<div id="tip_appliances">
+			<img src="img/modal_tip_appliances.png" class="img-responsive">
+		</div>
+		<div id="tip_lighting">
+			<img src="img/modal_tip_lighting.png" class="img-responsive">
+		</div>
+		<div id="tip_waterheating">
+			<img src="img/modal_tip_waterheating.png" class="img-responsive">
+		</div>
+	</div>
 
-		<script src="js/general.js"></script>
+	<script src="js/general.js"></script>
 
 	</div>
 	<script src="js/bootstrap.min.js"></script>
 
 <!-- /IG -->
 
-<!-- MAIN CONTAINER DIV --><div id="main"><!-- LEFT CONTAINER DIV --><div id="left"><!-- LEFT TILE 1 --><div class="tile"><img alt="Wild Horse solar panels." src="http://pse.com/EnergyEfficiency/PublishingImages/EES_SolarPanels_320x480.jpg"/></div>
+<!-- MAIN CONTAINER DIV --><div id="main"><!-- LEFT CONTAINER DIV --><div id="left"><!-- LEFT TILE 1 --><div class="tile"><img id="event-button" alt="Wild Horse solar panels." src="http://pse.com/EnergyEfficiency/PublishingImages/EES_SolarPanels_320x480.jpg"/></div>
 <!-- CLOSE LEFT TILE 1 --><!-- LEFT TILE 2 --><div class="tile blue vertical"><div class="lefttile"><div class="icons"><img alt="LED bulb icon" src="http://pse.com/EnergyEfficiency/PublishingImages/ICON_ledbulb_88x177.png"/></div>
 <p class="subhead"><a title="Energy Efficiency" href="/EnergyEfficiency/Documents/energy-efficiency.html">Learn about why we have energy efficiency programs and how you can participate</a></p></div></div>
 <!-- CLOSE LEFT TILE 2 --></div>
