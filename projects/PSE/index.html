@@ -10,7 +10,7 @@
 	<!-- <script src="js/mq.genie.min.js"></script> -->
 </head>
 <body>
-	<!-- <div class="container"> -->
+	<div class="container">
 
 		<!-- Body stuff -->
 		<div id="box" class="bounding-box">
@@ -56,86 +56,83 @@
 					</div>
 				</div>
 			</div>
-			<!-- <div id="people-row" class="row row-clear" style="background-image:url('img/people-background.png');background-repeat:no-repeat;background-size:100% auto; height:365px;">
+			<div id="people-row" class="row row-clear" style="background-image:url('img/people-background.png');background-repeat:no-repeat;background-size:100% auto; height:365px;">
 				<div class="col-xs-3 col-xs-offset-1 col-sm-3 col-md-3 col-md-offset-1">
 				</div>
 				<div class="col-xs-3 col-sm-3 col-md-3">
 					<img id="event-button" src="img/pse-onyourside.png" class="img-responsive animated fade-in pulse link-bubble">
 				</div>
-				<div class="col-xs-3 col-sm-3 col-md-3">
-				</div>
-				<div class="col-xs-2 col-sm-2 col-md-2">
-				</div>
-			</div> -->
-			<div class="row">
+			</div>
+			<!-- <div class="row">
 				<div class="col-xs-4">
 					<img id="event-button" src="http://placehold.it/250&text=Event" class="img-responsive">
 				</div>
 				<div class="col-xs-8">
 					<img src="http://placehold.it/200x600" class="img-responsive">
 				</div>
-			</div>
+			</div> -->
 
 
-		<!-- Modal -->
-		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					</div>
-					<div class="modal-body">
-						<div id="modal-content">
-							<div class="row">
-								<div class="modal_img_container col-xs-12 col-sm-12 col-md-12"></div>
-							</div>
-							<div class="row">
-								<div class="col-xs-2">
-									<button id="btn-left" class="btn btn-default pull-left" type="button" onclick="left()"><span class="glyphicon glyphicon-chevron-left"></span></button>
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						</div>
+						<div class="modal-body">
+							<div id="modal-content">
+								<div class="row">
+									<div class="modal_img_container col-xs-12 col-sm-12 col-md-12"></div>
 								</div>
-								<div class="col-xs-2 col-xs-offset-8">
-									<button id="btn-right" class="btn btn-default pull-right" type="button" onclick="right()"><span class="glyphicon glyphicon-chevron-right"></span></button>
+								<div class="row">
+									<div class="col-xs-2">
+										<button id="btn-left" class="btn btn-default pull-left" type="button" onclick="left()"><span class="glyphicon glyphicon-chevron-left"></span></button>
+									</div>
+									<div class="col-xs-2 col-xs-offset-8">
+										<button id="btn-right" class="btn btn-default pull-right" type="button" onclick="right()"><span class="glyphicon glyphicon-chevron-right"></span></button>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-				</div><!-- /.modal-content -->
-			</div><!-- /.modal-dialog -->
-		</div><!-- /.modal -->
+					</div><!-- /.modal-content -->
+				</div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
 
-		<div class="modal-info">
-			<div id="renewable">
-				<img src="img/modal_renewable.png" class="img-responsive">
+			<div class="modal-info">
+				<div id="renewable">
+					<img src="img/modal_renewable.png" class="img-responsive">
+				</div>
+				<div id="wind">
+					<img src="img/modal_wind.png" class="img-responsive">
+				</div>
+				<div id="hydro">
+					<img src="img/modal_hydroelectric.png" class="img-responsive">
+				</div>
+				<div id="efficiency">
+					<img src="img/modal_efficiency.png" class="img-responsive">
+				</div>
+				<div id="tips">
+	                <img src="img/modal_tip_eeprograms.png" class="img-responsive">
+					<!-- <img src="img/modal_tip_weatherization.png" class="img-responsive"> -->
+				</div>
+				<div id="tip_heating">
+					<img src="img/modal_tip_heating.png" class="img-responsive">
+				</div>
+				<div id="tip_lighting">
+					<img src="img/modal_tip_lighting.png" class="img-responsive">
+				</div>
+				<div id="tip_appliances">
+					<img src="img/modal_tip_appliances.png" class="img-responsive">
+				</div>
+				<div id="tip_waterheating">
+					<img src="img/modal_tip_waterheating.png" class="img-responsive">
+				</div>
 			</div>
-			<div id="wind">
-				<img src="img/modal_wind.png" class="img-responsive">
-			</div>
-			<div id="hydro">
-				<img src="img/modal_hydroelectric.png" class="img-responsive">
-			</div>
-			<div id="efficiency">
-				<img src="img/modal_efficiency.png" class="img-responsive">
-			</div>
-			<div id="tips">
-                <img src="img/modal_tip_eeprograms.png" class="img-responsive">
-				<img src="img/modal_tip_weatherization.png" class="img-responsive">
-			</div>
-			<div id="tip_heating">
-				<img src="img/modal_tip_heating.png" class="img-responsive">
-			</div>
-			<div id="tip_appliances">
-				<img src="img/modal_tip_appliances.png" class="img-responsive">
-			</div>
-			<div id="tip_lighting">
-				<img src="img/modal_tip_lighting.png" class="img-responsive">
-			</div>
-			<div id="tip_waterheating">
-				<img src="img/modal_tip_waterheating.png" class="img-responsive">
-			</div>
+
+			<script src="js/general.js"></script>
+
 		</div>
-
-		<script src="js/general.js"></script>
-
 	</div>
 	<script src="js/bootstrap.min.js"></script>
 <!-- </div> -->
