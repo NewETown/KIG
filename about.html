@@ -403,8 +403,19 @@
 				<img src="img/fn-trophy.svg" class="img-responsive awards">
 			</div>
 			<div class="col-xs-3">
-				<img src="img/fn-geekwire-trophy.svg" class="img-responsive awards">
+				<img id="geekwire-trophy" src="img/fn-geekwire-trophy.svg" class="img-responsive awards">
 			</div>
+		</div>
+		<div >
+			<!-- <div id="cord" class="col-md-12">
+				<img src="img/cord.svg">
+			</div> -->
+			<svg width="100%" height="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" class="cord-div">
+				<path
+					d="M 951,2 990,2 990,260 11,260 11,498 225,498"
+					stroke="#c22b2e" stroke-width="3" fill="none" strokeDashoffset="0"
+				/>
+			</svg>
 		</div>
 		<div class="row">
 			<!-- TV row -->
@@ -474,6 +485,26 @@
 	    trigger: 'hover',
         'placement': 'right auto',
         delay: { show: 500, hide: 100 }
+	});
+
+	var path = document.querySelector('.cord-div path');
+	var length = path.getTotalLength();
+	// Clear any previous transition
+	path.style.transition = path.style.WebkitTransition = 'none';
+	// Set up the starting positions
+	path.style.strokeDasharray = length + ' ' + length;
+	path.style.strokeDashoffset = length;
+
+	$('#geekwire-trophy').click(function() {
+		
+		
+		// Trigger a layout so styles are calculated & the browser
+		// picks up the starting position before animating
+		path.getBoundingClientRect();
+		// Define our transition
+		path.style.transition = path.style.WebkitTransition = 'stroke-dashoffset 2s ease-in-out';
+		// Go!
+		path.style.strokeDashoffset = '0';
 	});
 
 	</script>

@@ -6,6 +6,12 @@
 	font-size: 108px;
 }
 
+.cord-div {
+	overflow: visible;
+	margin-top: -60px;
+	margin-bottom: -250px;
+}
+
 .list-inline-no-padding {
 	padding-left: 2%;
 }
