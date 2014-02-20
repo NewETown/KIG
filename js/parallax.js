@@ -1,33 +1,21 @@
-var marbles = $('.marble-container').children();
-var marble0, marble1, marble2, scrollDir = 1, prevScroll = 0, fistBumpOffset = $('#fist-bump-row').offset().top + 175, marble_offset;
+var scrollDir = 1,
+	prevScroll = 0, 
+	fistBumpOffset = $('#fist-bump-row').offset().top + 175,
+	row1_offset = $('#row1').offset().top + 15,
+	row2_offset = $('#row2').offset().top + 45,
+	row3_offset = $('#row3').offset().top + 60,
+	row4_offset = $('#row4').offset().top + 75,
+	row5_offset = $('#row5').offset().top + 90,
+	marble_offset, 
+	marble_container_height;
 
 $(document).ready(function() {
-	setTimeout(setMarbles, 200);	
+	var marble_container = $('.marble-container');
+	marble_offset = marble_container.offset().top;
+	marble_container_height = marble_container.height();
+
+	$('#marbles').css('top', 0);
 });
-
-function setMarbles() {
-	var marble_container = $('.marble-container'),
-		_w = marble_container.width(),
-	    _w_min = _w / 5,
-	    _h = marble_container.height();
-
-    marble_offset = marble_container.offset().top;
-
-	marble_container.children().each(function() {
-		var _x = Math.floor(Math.random() * (_w - _w_min) ),
-		    _y = Math.random() * (_h/3) + marble_offset, //Math.max(_dist + (_h * .6) + Math.floor((Math.random() * _h/3)), 5375),
-		    _m = Math.floor(Math.random() * 2),
-		    _img = $(this);
-
-		_img.css('top', _y);
-		_img.css('margin-left', _x);
-		_img.addClass('marble'+_m);
-	});
-
-	marble0 = $('.marble0');
-	marble1 = $('.marble1');
-	marble2 = $('.marble2');
-}
 
 $(window).scroll(function() {
 
@@ -38,44 +26,34 @@ $(window).scroll(function() {
 	else
 		scrollDir = -1;
 
+	if(_scroll > row1_offset)
+		$('#row1').addClass('animated');
+
+	if(_scroll > row2_offset)
+		$('#row2').addClass('animated');
+
+	if(_scroll > row3_offset)
+		$('#row3').addClass('animated');
+
+	if(_scroll > row4_offset)
+		$('#row4').addClass('animated');
+
+	if(_scroll > row5_offset)
+		$('#row5').addClass('animated');
+
 	if(_scroll > fistBumpOffset)  {
 		$('#left-fist').addClass("left-fist fist-bump");
 		$('#right-fist').addClass("right-fist fist-bump");
 	}
 
-	if(_scroll > (marble_offset - 50) && _scroll < (marble_offset + 500)) {
+	if(_scroll > (marble_offset + marble_container_height) && _scroll < (marble_offset + 1500 )) {
 
 		console.log(_scroll);
 
-		marble0.each(function() {
-			var _t = $(this),
-			    _h = parseInt(_t.css('top'));
+		$('#marbles').css({'top': function() {
+			return parseInt($('#marbles').css('top')) + (30 * scrollDir);
+		}});
 
-			_t.css({'top': function() {
-	    		return _h + (50 * scrollDir);
-		  		}
-			});
-		});
-
-		marble1.each(function() {
-			var _t = $(this),
-			    _h = parseInt(_t.css('top'));
-
-			_t.css({'top': function() {
-	    		return _h + (75 * scrollDir);
-		  		}
-			});
-		});
-
-		marble2.each(function() {
-			var _t = $(this),
-				_h = parseInt(_t.css('top'));
-
-			_t.css({'top': function() {
-	    		return _h + (100 * scrollDir);
-		  		}
-			});
-		});
 	}
 	
 	prevScroll = _scroll;

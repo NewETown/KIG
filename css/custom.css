@@ -107,6 +107,11 @@
 	display: none;
 }
 
+.marble-cluster {
+	width: 100%;
+	position: absolute;
+}
+
 .popover {
 	max-width: 300px;
 	margin-top: -5em;
@@ -237,6 +242,10 @@
 	border-bottom-left-radius:5em 5em;
 	/* reduce the damage in FF3.0 */
 	display:block;
+}
+
+div[id^='row'] {
+	opacity:0;
 }
 
 @media (max-width: 1280px) {
