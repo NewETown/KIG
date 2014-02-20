@@ -184,3 +184,67 @@
 	     -o-animation-name: right_fist;
 	        animation-name: right_fist;
 }
+
+@-webkit-keyframes wobble {
+	0% { -webkit-transform-origin: 50% 70%; -webkit-transform: rotate(0deg); }
+	33% { -webkit-transform: rotate(-10deg); -webkit-animation-timing-function: ease-out; }
+	66% { -webkit-transform: rotate(10deg); -webkit-animation-timing-function: ease-in; }
+	100% { -webkit-transform-origin: 50% 70%; -webkit-transform: rotate(0deg); }
+}
+
+@-moz-keyframes wobble {
+	0% { -moz-transform-origin: 50% 70%; -moz-transform: rotate(0deg); }
+	33% { -moz-transform: rotate(-10deg); -moz-animation-timing-function: ease-out; }
+	66% { -moz-transform: rotate(10deg); -moz-animation-timing-function: ease-in; }
+	100% { -moz-transform-origin: 50% 70%; -moz-transform: rotate(0deg); }
+}
+
+@-o-keyframes wobble {
+	0% { -o-transform-origin: 50% 70%; -o-transform: rotate(0deg); }
+	33% { -o-transform: rotate(-10deg); -o-animation-timing-function: ease-out; }
+	66% { -o-transform: rotate(10deg); -o-animation-timing-function: ease-in; }
+	100% { -o-transform-origin: 50% 70%; -o-transform: rotate(0deg); }
+}
+
+@keyframes wobble {
+	0% { transform-origin: 50% 70%; transform: rotate(0deg); }
+	33% { transform: rotate(-10deg); animation-timing-function: ease-out; }
+	66% { transform: rotate(10deg); animation-timing-function: ease-in; }
+	100% { transform-origin: 50% 70%; transform: rotate(0deg); }
+}
+
+.wobble {
+	-webkit-animation-duration: 3s;
+	   -moz-animation-duration: 3s;
+	     -o-animation-duration: 3s;
+	        animation-duration: 3s;
+	-webkit-animation-name: wobble;
+	   -moz-animation-name: wobble;
+	     -o-animation-name: wobble;
+	        animation-name: wobble;
+	-webkit-animation-iteration-count: infinite;
+	   -moz-animation-iteration-count: infinite;
+	     -o-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes pop_in {
+	0% { -webkit-transform: scale(.9, .9); opacity: 0; }
+	80% { -webkit-transform: scale(1.1, 1.1); -webkit-animation-timing-function: ease-in; }
+	100% { -webkit-transform: scale(1, 1); opacity: 1; -webkit-animation-timing-function: ease-out; }
+}
+
+.pop-in {
+	-webkit-animation-fill-mode: both;
+	   -moz-animation-fill-mode: both;
+	     -o-animation-fill-mode: both;
+	        animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+	   -moz-animation-duration: 2s;
+	     -o-animation-duration: 2s;
+	        animation-duration: 2s;
+	-webkit-animation-name: pop_in;
+	   -moz-animation-name: pop_in;
+	     -o-animation-name: pop_in;
+	        animation-name: pop_in;
+}

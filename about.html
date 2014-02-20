@@ -143,7 +143,8 @@
 				<h6>Co-founder & Chief Swiss Army Knife</h6>
 			</div>
 			<div class="col-sm-3" data-toggle="popover" data-content="A New England import, Angela studied business and economics at CWU. She joined Killer Infographics following a policy internship at the Washington State Legislature. You can find her first publication, a series of brochures for the Office of the Chief Clerk, on display in the State Capitol.  In her free time, Angela serves on several executive boards of local political organizations, volunteers for various causes and campaigns, and dotes on her feline child substitute, Noms.">
-				<img src="img/angela-bastien.jpg" class="img-responsive">
+				<!-- <img src="img/angela-bastien.jpg" class="img-responsive"> -->
+				<img src="http://placehold.it/350x350&text=Angela" class="img-responsive">
 				<h4>Angela Bastien</h4>
 				<h6>Research and Content Specialist</h6>
 			</div>
@@ -175,7 +176,8 @@
 				<h6>Senior Design High Chancellor </h6>
 			</div>
 			<div class="col-sm-3" data-toggle="popover" data-content="Nick’s a California native who studied entrepreneurship in college, then moved to Seattle despite never visiting the city. The plan was to work in startup-land and then start something on his own, which is exactly what happened over an exciting nine-year adventure in the city. Now back in his homeland, Nick spends his time building new client relationships for Killer Infographics with the biggest brands in the world. When he is not making it rain, he prefers to spend time with his wife working on his property that he refers to as Man Land.">
-				<img src="img/nick-grant.jpg" class="img-responsive">
+				<!-- <img src="img/nick-grant.jpg" class="img-responsive"> -->
+				<img src="http://placehold.it/350x350&text=Nick" class="img-responsive">
 				<h4>Nick Grant</h4>
 				<h6>Co-founder & Chief Rainmaker</h6>
 			</div>
@@ -226,12 +228,14 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-3" data-toggle="popover" data-content="Carrie has lived in Washington state for aproximately 85.42% of her life. She now makes her home in Seattle, where she lives on top of a hill with her adorable fluffy cat. She enjoys bad puns, good music, and mediocre dance moves. Carrie is also a cellist and a 2012 graduate of Whitman College, where she majored in music performance. Now she works in design. Go figure.">
-				<img src="img/tyler-stockdale.jpg" class="img-responsive">
+				<!-- <img src="img/tyler-stockdale.jpg" class="img-responsive"> -->
+				<img src="http://placehold.it/350x350&text=Tyler" class="img-responsive">
 				<h4>Tyler Stockdale</h4>
 				<h6>Edit Minion and Grand Tetris Master</h6>
 			</div>
 			<div class="col-sm-3" data-toggle="popover" data-content="Proud Washington resident, Eric has always called the Pacific Northwest home. While not proving his marketing marksmanship for Killer, he spends his time as freelance professional photographer. On any given night you might find him photographing concerts, hanging out with local rockstars and exploring the many facets of Seattle's diverse music scene.">
-				<img src="img/eric-tra.jpg" class="img-responsive">
+				<!-- <img src="img/eric-tra.jpg" class="img-responsive"> -->
+				<img src="http://placehold.it/350x350&text=Eric" class="img-responsive">
 				<h4>Eric Tra</h4>
 				<h6>Promo and Marketing Sharpshooter</h6>
 			</div>
@@ -245,6 +249,9 @@
 				<h4>Casper</h4>
 				<h6>The Friendly Ghost</h6>
 			</div>
+		</div>
+		<div class="row">
+			<h2 class="text-center">The Customer is Key</h2>
 		</div>
 		<div id="fist-bump-row" class="row">
 		<!-- Fist-bump animation -->
@@ -403,13 +410,10 @@
 				<img src="img/fn-trophy.svg" class="img-responsive awards">
 			</div>
 			<div class="col-xs-3">
-				<img id="geekwire-trophy" src="img/fn-geekwire-trophy.svg" class="img-responsive awards">
+				<img id="geekwire-trophy" src="img/fn-geekwire-trophy.svg" class="img-responsive awards wobble">
 			</div>
 		</div>
 		<div >
-			<!-- <div id="cord" class="col-md-12">
-				<img src="img/cord.svg">
-			</div> -->
 			<svg width="100%" height="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" class="cord-div">
 				<path
 					d="M 951,2 990,2 990,260 11,260 11,498 225,498"
@@ -496,8 +500,6 @@
 	path.style.strokeDashoffset = length;
 
 	$('#geekwire-trophy').click(function() {
-		
-		
 		// Trigger a layout so styles are calculated & the browser
 		// picks up the starting position before animating
 		path.getBoundingClientRect();
@@ -505,6 +507,9 @@
 		path.style.transition = path.style.WebkitTransition = 'stroke-dashoffset 2s ease-in-out';
 		// Go!
 		path.style.strokeDashoffset = '0';
+
+		$('#geekwire-trophy').removeClass('wobble');
+		setTimeout(function() { $('.youtube').css('visibility','inherit').addClass('pop-in'); }, 2000);
 	});
 
 	</script>
